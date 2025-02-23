@@ -14,8 +14,10 @@ int main(void) {
     
     int pmulheres = 17;
     int phomens = 20;
+
+    int total = (qmulheres * pmulheres) + (qhomens * phomens);
     
-    printf("O preço arrecadado foi de R$%d \n", qmulheres * pmulheres, qhomens * phomens);
+    printf("O preço arrecadado foi de R$%d \n", total);
     
     return 0;
 }
