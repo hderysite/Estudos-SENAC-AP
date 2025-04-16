@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    srand(time(NULL));
+    
+    int num = rand() % 100 + 1;
+    
+    if (num % 2 == 0){
+        printf("Este número é par!");
+    } else {
+        printf("Este número é ímpar!");
+    }
+    return 0;
+}

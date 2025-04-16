@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+int main()
+{
+    srand(time(NULL));
+    
+    int sorteado = rand() % 3 + 1;
+    int palpite;
+
+    printf("Dê seu palpite (1 a 3): \n");
+    scanf("%d", &palpite);
+    
+    if (palpite == sorteado){
+        printf("Acertou!");
+    } else {
+        printf("Errou, tente novamente");
+        scanf("%d", &palpite);
+        if (palpite == sorteado){
+            printf("Acertou.. de segunda!");
+        } else{
+            printf("Quem sabe numa próxima");
+        }
+    }
+    return 0;
+}

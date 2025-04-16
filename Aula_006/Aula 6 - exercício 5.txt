@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+int main()
+{
+    int sort1 = rand() % 5 + 1;
+    int sort2 = rand() % 5 + 1;
+    int palp1; 
+    int palp2;
+    
+    printf("Dê dois palpites (1 à 5)");
+    scanf("%d" "%d", &palp1, &palp2);
+    
+    if (palp1 == sort2 || palp1 == sort1 && palp2 == sort2 || palp2 == sort1){
+        printf("Parabéns");
+    } else{
+        printf("Não conseguiu");
+    }
+    
+    return 0;
+}
