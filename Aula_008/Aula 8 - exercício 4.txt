@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int numero, contador = 1, soma = 0;
+
+    printf("Digite 10 números. O programa vai somar todos eles.\n\n");
+
+    while (contador <= 10) {
+        printf("Digite o %dº número: ", contador);
+        scanf("%d", &numero);
+
+        soma += numero; // soma = soma + numero
+        contador++;
+    }
+
+    printf("\nA soma dos 10 números é: %d\n", soma);
+
+    return 0;
+}

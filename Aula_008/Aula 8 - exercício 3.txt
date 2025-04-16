@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int numero, contador = 1;
+
+    printf("Digite 5 números. O programa informará se cada um é par ou ímpar.\n\n");
+
+    while (contador <= 5) {
+        printf("Digite o %dº número:\n", contador);
+        scanf("%d", &numero);
+
+        if (numero % 2 == 0) {
+            printf("%d é par.\n\n", numero);
+        } else {
+            printf("%d é ímpar.\n\n", numero);
+        }
+
+        contador++;
+    }
+
+    return 0;
+}
