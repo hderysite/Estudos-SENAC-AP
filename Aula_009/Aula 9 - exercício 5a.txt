@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int codigo, idade, codigoMaisVelho = 0, idadeMaisVelho = 0;
+    int cont = 1;
+
+    while (cont <= 5) {
+        printf("Digite o código do %dº atleta: ", cont);
+        scanf("%d", &codigo);
+        printf("Digite a idade do %dº atleta: ", cont);
+        scanf("%d", &idade);
+
+        if (idade > idadeMaisVelho) {
+            idadeMaisVelho = idade;
+            codigoMaisVelho = codigo;
+        }
+
+        cont++; 
+    }
+
+    printf("O código do atleta mais velho é: %d\n", codigoMaisVelho);
+    
+    return 0;
+}

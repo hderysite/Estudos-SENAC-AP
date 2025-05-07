@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int codigo, idade, codigoMaisVelho = 0, idadeMaisVelho = 0;
+    int somaIdades = 0;
+    int cont = 0;
+    int continuar = 1; 
+
+    while (continuar == 1) {
+        printf("Digite o código do %dº atleta: ", cont + 1);
+        scanf("%d", &codigo);
+        printf("Digite a idade do %dº atleta: ", cont + 1);
+        scanf("%d", &idade);
+
+        somaIdades += idade;
+
+        if (idade > idadeMaisVelho) {
+            idadeMaisVelho = idade;
+            codigoMaisVelho = codigo;
+        }
+
+        cont++;
+
+        printf("Deseja adicionar outro atleta? (1 - Sim, 2 - Não): ");
+        scanf("%d", &continuar);
+    }
+
+    float mediaIdades = somaIdades / (float)cont;
+
+    printf("O código do atleta mais velho é: %d\n", codigoMaisVelho);
+    printf("A idade média dos atletas é: %.2f\n", mediaIdades);
+    
+    return 0;
+}

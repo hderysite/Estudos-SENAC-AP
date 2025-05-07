@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int numeroUsuario, numeroSorteado;
+    numeroSorteado = rand() % 10 + 1;
+
+    printf("Digite um número entre 1 e 10: ");
+    scanf("%d", &numeroUsuario);
+
+    while (numeroUsuario < 1 || numeroUsuario > 10) {
+        printf("Número inválido! Por favor, digite um número entre 1 e 10: ");
+        scanf("%d", &numeroUsuario);
+    }
+
+    if (numeroUsuario == numeroSorteado) {
+        printf("Parabéns! Você acertou. O número era %d.\n", numeroSorteado);
+    } else {
+        printf("Que pena! Você errou. O número sorteado foi %d.\n", numeroSorteado);
+    }
+
+    return 0;
+}

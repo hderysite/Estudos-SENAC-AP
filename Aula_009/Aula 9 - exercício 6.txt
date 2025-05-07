@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    printf("Digite um número que seja par, maior que 200 e múltiplo de 4: ");
+    scanf("%d", &numero);
+
+    while (numero % 2 != 0 || numero <= 200 || numero % 4 != 0) {
+        printf("Número inválido. Tente novamente.\n");
+        printf("Digite um número que seja par, maior que 200 e múltiplo de 4: ");
+        scanf("%d", &numero);
+    }
+
+    printf("Número válido digitado: %d\n", numero);
+    
+    return 0;
+}

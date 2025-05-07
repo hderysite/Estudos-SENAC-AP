@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int soma = 0;
+    int cont = 26; 
+
+    while (cont <= 200) {
+        soma += i;
+        cont += 2; 
+    }
+
+    printf("A soma dos números pares entre 25 e 200 é: %d\n", soma);
+
+    return 0;
+}
